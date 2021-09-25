@@ -15,7 +15,7 @@ playbook.yml
 ```
 2. Create a playbook file called “playbook.yml”
 We are calling the “bugsnag” module which we will be developing soon.
-```
+```yaml
 ---
 - hosts: localhost
   tasks:
@@ -39,7 +39,7 @@ We will be using the fetch_url method. It is best to reuse methods that already 
 
 AnsibleModule constructor
 
-```
+```python
 module = AnsibleModule(
       argument_spec=dict(
           api_key=dict(required=True, no_log=True),
